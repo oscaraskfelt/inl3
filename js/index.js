@@ -14,11 +14,18 @@ function submitHandler(e){
     heroes.searchChar(nameQuery)
     .then(
         res => {
-            res.data.results.forEach(element => {
-                let li = create.getLi(element)
-                ul.appendChild(li)
-                li.addEventListener('click', charPicker)
-            })
+            ul.innerHTML = ''
+            console.log(res)
+            if(!res.data.error){
+                res.data.results.forEach(element => {
+                    let li = create.getLi(element)
+                    ul.appendChild(li)
+                    li.addEventListener('click', charPicker)
+                })
+            }
+            else {
+                ul.innerHTML = 'No results'
+            }
         }
     )
 }
