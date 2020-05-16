@@ -1,4 +1,4 @@
-exports.getLi = (element) => {
+exports.getLi = (element, faction) => {
     let li = document.createElement('li')
     let char = {
         name: document.createElement('p'),
@@ -13,6 +13,6 @@ exports.getLi = (element) => {
     li.appendChild(char.fullName)
     li.appendChild(char.img)
     li.setAttribute("id", element.id)
-    li.classList.add('charSuggestions')
+    li.classList.add('charSuggestions', faction ? 'faction1' : 'faction2')
     return li
 }
