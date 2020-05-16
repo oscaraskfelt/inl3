@@ -15,5 +15,13 @@
   "bugs": {
     "url": "https://github.com/oscaraskfelt/inl3/issues"
   },
-  "homepage": "https://github.com/oscaraskfelt/inl3#readme"
+  "homepage": "https://github.com/oscaraskfelt/inl3#readme",
+  "devDependencies": {
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "chart.js": "^2.9.3"
+  }
 }
