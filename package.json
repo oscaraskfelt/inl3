@@ -1,0 +1,19 @@
+{
+  "name": "inl3",
+  "version": "1.0.0",
+  "description": "inl3 i flapp",
+  "main": "js/index.js",
+  "scripts": {
+    "test": "jest tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oscaraskfelt/inl3.git"
+  },
+  "author": "oscar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oscaraskfelt/inl3/issues"
+  },
+  "homepage": "https://github.com/oscaraskfelt/inl3#readme"
+}
