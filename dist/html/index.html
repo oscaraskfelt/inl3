@@ -1,30 +1,43 @@
 <!doctype html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="utf-8">
         <title>Inlämning 3</title>
+        <link rel="stylesheet" href="../css/style.css">
     </head>
     <body>
-
-        <button id="btn">Klicka mig</button>
-
-        <form id="form1">
-            <input type="text" class="nameInput">
-            <input type="submit" value="skicka">
-        </form>
-        <span id="status1"></span>
-        <ul id="charPicker1"></ul>
-
-        <form id="form2">
-            <input type="text" class="nameInput">
-            <input type="submit" value="skicka">
-        </form>
-        <span id="status2"></span>
-        <ul id="charPicker2"></ul>
-        
-        
-        <canvas id="chart" width="200" height="200"></canvas>
-
+        <header>
+            <h1>Compare the heroes</h1>
+        </header>
+        <section>
+            <span>
+                A simple webapp to compare two superheroes using the <a href="https://superheroapi.com/">superhero-api</a> to get the information and presenting it with <a href="https://www.chartjs.org/">Chart.js</a>
+            </span>
+        </section>
+        <main>
+            <div>
+                <form id="form1">
+                    <input type="text" class="nameInput">
+                    <input type="submit" value="skicka">
+                </form>
+                <span id="status1"></span>
+                <ul id="charPicker1"></ul>
+            </div>
+            <div>
+                <form id="form2">
+                    <input type="text" class="nameInput">
+                    <input type="submit" value="skicka">
+                </form>
+                <span id="status2"></span>
+                <ul id="charPicker2"></ul>
+            </div>
+            
+            <canvas id="chart" width="200" height="200"></canvas>
+        </main>
+        <footer>
+            <p>Oscar Askfelt</p>
+        </footer>
         <script type="text/javascript" src="../bundle.js"></script>
     </body>
 </html> 
