@@ -1,19 +1,6 @@
-const color1 = {
-    intelligence : 'royalblue',
-    combat: 'tomato',
-    durability: 'papayawhip'
-}
-
-const color2 = {
-    intelligence : 'lightskyblue',
-    combat: 'salmon	',
-    durability: 'moccasin'
-}
-
-
 exports.updateChart = (chart, faction, data) => {
     console.log(data)
-    const color = faction == 1 ? color1 : color2
+    const color = faction == 1 ? ['tomato', 'orangered'] : ['papayawhip', 'moccasin']
     
     chart.data.datasets[faction - 1] = {
         label: data.name,
@@ -23,14 +10,14 @@ exports.updateChart = (chart, faction, data) => {
             data.powerstats.durability            
         ],
         backgroundColor: [
-            color.intelligence,
-            color.combat,
-            color.durability
+            color[0],
+            color[0],
+            color[0]
         ],
         borderColor: [
-            color.intelligence,
-            color.combat,
-            color.durability
+            color[1],
+            color[1],
+            color[1]
         ],
         borderWidth: 1
     };
