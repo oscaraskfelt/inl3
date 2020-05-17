@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header {
+    background-color: tomato;
+    color: papayawhip;
+    padding: 20px;
+}
+
+header > h1 {
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#pageDesc{
+    padding: 20px;
+}
+
+#pageDesc > span > a{
+    color: tomato;
+    text-decoration: none;
+}
+
+#forms {
+    height: 125px;
+    background-color: tomato;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#forms input[type=submit] {
+    background-color: papayawhip;
+    border-color: #555;
+    border-radius: 5px;
+    font-weight: 700;
+    color: #222
+}
+
+#forms input[type=text] {
+    background-color: #fafafa;
+    border-color: #555;
+    border-radius: 5px;
+}
+
+ul{
+    background: papayawhip;
+    position: absolute;
+    left: 0;
+    z-index: 20;
+    padding: 0;
+    width: 85%;
+    border-radius: 0 10px 10px 0;
+    box-shadow: 2px 2px #333;
+
+}
+
+li {
+    list-style-type: none;
+    margin-left: 10px;
+}
+
+li > p {
+    margin: 0;
+    font-weight: bold;
+}
+
+img {
+    height: 100px;
+    width: auto;
+    margin: ;
+}
+
+#chartContainer {
+    margin:40px 0;
+    position: relative;
+    height: auto;
+    width: 90%;
+}
+
+
+footer {
+    background-color: tomato;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer > p{
+    margin: 0;
+    color: papayawhip;
+}

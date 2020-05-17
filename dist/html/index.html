@@ -10,30 +10,37 @@
         <header>
             <h1>Compare the heroes</h1>
         </header>
-        <section>
+        <section id="pageDesc">
             <span>
-                A simple webapp to compare two superheroes using the <a href="https://superheroapi.com/">superhero-api</a> to get the information and presenting it with <a href="https://www.chartjs.org/">Chart.js</a>
+                A simple webapp to compare two superheroes using the <a href="https://superheroapi.com/" target="_blank">superhero-api</a> to get the information and presenting it with <a href="https://www.chartjs.org/" target="_blank">Chart.js</a>
             </span>
         </section>
         <main>
-            <div>
-                <form id="form1">
-                    <input type="text" class="nameInput">
-                    <input type="submit" value="skicka">
-                </form>
-                <span id="status1"></span>
-                <ul id="charPicker1"></ul>
-            </div>
-            <div>
-                <form id="form2">
-                    <input type="text" class="nameInput">
-                    <input type="submit" value="skicka">
-                </form>
-                <span id="status2"></span>
-                <ul id="charPicker2"></ul>
-            </div>
-            
-            <canvas id="chart" width="200" height="200"></canvas>
+            <section id="forms">
+                <div>
+                    <form id="form1">
+                        <input type="text" class="nameInput">
+                        <input type="submit" value="Go!">
+                    </form>
+                    <span id="status1"></span>
+                    <ul id="charPicker1"></ul>
+                </div>
+                <div>
+                    <form id="form2">
+                        <input type="text" class="nameInput">
+                        <input type="submit" value="Go!">
+                    </form>
+                    <span id="status2"></span>
+                    <ul id="charPicker2"></ul>
+                </div>
+            </section>
+            <section id="gallery">
+                    <img id="portrait1" src="" alt="">
+                    <img id="portrait2" src="" alt="">
+            </section>
+            <section id="chartContainer">
+                <canvas id="chart"></canvas>
+            </section>
         </main>
         <footer>
             <p>Oscar Askfelt</p>

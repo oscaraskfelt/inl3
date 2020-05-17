@@ -62,6 +62,11 @@ function submitHandler(e){
             }
             else {
                 ul.innerHTML = 'No results'
+                setTimeout(() => {
+                    if(ul.textContent == 'No results'){
+                        ul.innerHTML = ''
+                    }
+                }, 3000);
             }
             document.getElementById(`status${faction?1:2}`).innerHTML = ""
         }
