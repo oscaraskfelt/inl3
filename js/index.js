@@ -22,8 +22,8 @@ window.onload = () => {
     chart = new Chart(ctx, {
         type: 'bar',
         data: {
-            labels: ['Intelligence', 'Combat', 'Durability'],
-            datasets: []
+            labels: ['Intelligence', 'Combat', 'Speed'],
+            datasets: [{label: 'Hero #1', backgroundColor: 'tomato'}, {label: 'Hero #2', backgroundColor: 'papayawhip'}]
         },
         options: {
             scales: {

@@ -7,7 +7,7 @@ exports.updateChart = (chart, faction, data) => {
         data: [
             data.powerstats.intelligence, 
             data.powerstats.combat,
-            data.powerstats.durability            
+            data.powerstats.speed            
         ],
         backgroundColor: [
             color[0],
