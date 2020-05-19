@@ -89,4 +89,9 @@ function charPicker(){
 
     chart = charts.updateChart(chart, factionNr, chars[`char${factionNr}`])
     chart.update()
+
+    let portrait = document.getElementById(`portrait${factionNr}`)
+    portrait.src = chars[`char${factionNr}`].image.url
+    portrait.alt = chars[`char${factionNr}`].name
+    portrait.style.opacity = '1'
 }
