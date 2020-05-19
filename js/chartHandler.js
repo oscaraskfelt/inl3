@@ -1,3 +1,4 @@
+//func to update the chart, takes the chart, which faction, and the data and returns updated dataset for the chart
 exports.updateChart = (chart, faction, data) => {
     const color = faction == 1 ? ['tomato', 'orangered'] : ['papayawhip', 'moccasin']
     

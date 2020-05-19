@@ -3,6 +3,9 @@ body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+
+/*      Header      */
+
 header {
     background-color: tomato;
     color: papayawhip;
@@ -15,6 +18,9 @@ header > h1 {
     text-align: center;
 }
 
+
+/*      PageDesc        */
+
 #pageDesc{
     padding: 20px;
 }
@@ -23,6 +29,9 @@ header > h1 {
     color: tomato;
     text-decoration: none;
 }
+
+
+/*      Forms       */
 
 #forms {
     height: 125px;
@@ -94,6 +103,9 @@ img {
     border: 1px solid #222;
 }
 
+
+/*      Gallery        */
+
 #gallery {
     display: grid;
 }
@@ -110,11 +122,14 @@ img {
     grid-column-start: 3;
 }
 
+/*      Chart       */
+
 #chartContainer {
     margin: 40px 0;
     position: relative;
 }
 
+/*      Footer      */
 
 footer {
     background-color: tomato;
@@ -131,6 +146,8 @@ footer > p{
 }
 
 @media screen and (min-width: 600px){
+
+    /*      pagedesc        */
     
     #pageDesc{
         display: flex;
@@ -143,9 +160,15 @@ footer > p{
         max-width: 500px;
     }
 
+
+    /*      forms       */
+
     #forms{
         flex-direction: row;
     }
+
+    
+    /*      chart       */
 
     #chartContainer{
         width: 80%;
