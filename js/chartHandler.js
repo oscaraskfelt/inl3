@@ -1,5 +1,4 @@
 exports.updateChart = (chart, faction, data) => {
-    console.log(data)
     const color = faction == 1 ? ['tomato', 'orangered'] : ['papayawhip', 'moccasin']
     
     chart.data.datasets[faction - 1] = {

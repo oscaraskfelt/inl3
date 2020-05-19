@@ -48,7 +48,6 @@ function submitHandler(e){
     .then(
         res => {
             ul.innerHTML = ''
-            console.log(res)
             if(!res.data.error){
                 faction 
                 ? chars.faction1 = res.data.results
@@ -72,7 +71,7 @@ function submitHandler(e){
         }
     )
     .catch(error => {
-        console.log(error)
+        console.warn(error)
         document.getElementById(`status${faction?1:2}`).innerHTML = ""
     })
 }
