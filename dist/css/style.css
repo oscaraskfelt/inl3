@@ -30,7 +30,7 @@ header > h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 #forms input[type=submit] {
@@ -46,6 +46,8 @@ header > h1 {
     border-color: #555;
     border-radius: 5px;
 }
+
+#forms div
 
 ul{
     background: papayawhip;
@@ -72,14 +74,32 @@ li > p {
 img {
     height: 100px;
     width: auto;
-    margin: ;
+}
+
+#gallery {
+    display: grid;
+}
+
+#gallery > img {
+    border-radius: 4px;
+    margin-top: 2px;
+    box-shadow: 2px 2px 2px #888;
+    padding: 2px;
+    border: 1px solid #222;
+    opacity: 0;
+}
+
+#portrait1{
+    grid-column-start: 2;
+}
+
+#portrait2{
+    grid-column-start: 3;
 }
 
 #chartContainer {
-    margin:40px 0;
+    margin: 40px 0;
     position: relative;
-    height: auto;
-    width: 90%;
 }
 
 
