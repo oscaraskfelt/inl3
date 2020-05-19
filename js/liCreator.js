@@ -7,8 +7,10 @@ exports.getLi = (element, faction) => {
     }
     char.name.appendChild(document.createTextNode('Name: ' + element.name))
     char.fullName.appendChild(document.createTextNode('Full name: ' +element.biography['full-name']))
+    
     char.img.alt = element.name
     char.img.setAttribute('src', element.image.url)
+    
     li.appendChild(char.name)
     li.appendChild(char.fullName)
     li.appendChild(char.img)

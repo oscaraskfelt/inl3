@@ -38,16 +38,18 @@ window.onload = () => {
 }
 
 function submitHandler(e){
-    // TODO: add disabling submitbutton until call is complete
     e.preventDefault()
     const faction = this.id == 'form1' ? 1 : 0 
-    document.getElementById(`status${faction?1:2}`).innerHTML = "laddar.."
+    
+    let status = document.getElementById(`status${faction?1:2}`)
+    status.innerHTML = "laddar.." //user feedback
+
     const ul = document.getElementById(faction ? 'charPicker1' : 'charPicker2')
     const nameQuery = this.querySelector('.nameInput').value
     heroes.searchChar(nameQuery)
     .then(
         res => {
-            ul.innerHTML = ''
+            ul.innerHTML = '' //user feedback
             if(!res.data.error){
                 faction 
                 ? chars.faction1 = res.data.results
@@ -60,19 +62,19 @@ function submitHandler(e){
                 })
             }
             else {
-                ul.innerHTML = 'No results'
+                ul.innerHTML = 'No results' //user feedback
                 setTimeout(() => {
                     if(ul.textContent == 'No results'){
                         ul.innerHTML = ''
                     }
                 }, 3000);
             }
-            document.getElementById(`status${faction?1:2}`).innerHTML = ""
+            status.innerHTML = "" //user feedback
         }
     )
     .catch(error => {
         console.warn(error)
-        document.getElementById(`status${faction?1:2}`).innerHTML = ""
+        status.innerHTML = "" //user feedback
     })
 }
 
